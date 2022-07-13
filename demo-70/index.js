@@ -22,3 +22,17 @@
      }
  };
  // 这里复杂度会降低到O(n)
+
+
+ /**
+ * @param {number} n
+ * @return {number}
+ */
+const solution = [, 1, 2]
+var climbStairs = function(n) {
+    for(let i = 3; i < n+1; i++){
+        solution[i] = (solution[i-1]) + (solution[i-2])
+    }
+    return solution[n]
+};
+// 使用递归的写法
